@@ -706,6 +706,13 @@ section {
 	height: 130px;
 	width: 100%;
 	border-radius: 10px;
+	margin-bottom: 10px;
+}
+
+@media screen and (max-width: 992px) {
+	.about .full-high{
+		display: none;
+	}
 }
 
 .about .play-btn:hover::after {
