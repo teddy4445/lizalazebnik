@@ -293,6 +293,29 @@ h1, h2, h3, h4, h5, h6 {
   padding: 10px 20px;
   font-weight: 500;
   outline: none;
+  text-align: center;
+}
+
+@media screen and (max-width: 995px) {
+	.flag_desktop{
+		display: none;
+	}
+
+	.flag_mobile{
+		display: inherit;
+	}
+}
+
+
+.mobile-nav img {
+  display: inline;
+  position: relative;
+  color: #3c4133;
+  margin: 15px 20px;
+  padding: 0px 0px;
+  max-height: 80px;
+  max-width: 120px;
+  text-align: center;
 }
 
 .mobile-nav a:hover, .mobile-nav .active > a, .mobile-nav li:hover > a {
@@ -301,11 +324,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .mobile-nav .get-started a {
-  background: #3c0d64;
-  color: #fff;
+  background: #fff;
+  color: #3c0d64;
   border-radius: 50px;
   margin: 15px 15px 0 15px;
   padding: 10px 25px;
+  font-size: 16pt;
+  font-weight: 700;
 }
 
 .mobile-nav .get-started a:hover {
@@ -358,6 +383,8 @@ h1, h2, h3, h4, h5, h6 {
 .mobile-nav-active .mobile-nav {
   opacity: 1;
   visibility: visible;
+  background: linear-gradient(180deg, rgba(255,109,130,0.5) 0%, rgba(176,59,171,0.5) 33%, rgba(120,37,137,0.5) 66%, rgba(60,13,100,0.5) 100%)
+  
 }
 
 .mobile-nav-active .mobile-nav-toggle i {
