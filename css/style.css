@@ -9,7 +9,7 @@
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: "Simonetta";
+  font-family: "Lato";
   color: #444444;
 }
 
@@ -23,7 +23,7 @@ a:hover {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Simonetta";
+  font-family: "Lato";
 }
 
 /*--------------------------------------------------------------
@@ -130,7 +130,7 @@ h1, h2, h3, h4, h5, h6 {
   transition: 0.3s;
   font-size: 14px;
   font-weight: 600;
-  font-family: "Simonetta";
+  font-family: "Lato";
 }
 
 .nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
@@ -389,7 +389,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero .hero-container {
   position: absolute;
-  bottom: 0;
+  bottom: 100px;
   top: 0;
   left: 0;
   right: 0;
@@ -416,7 +416,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero .btn-get-started {
-	font-family: "Simonetta";
+	font-family: "Lato";
   font-weight: 600;
   font-size: 13px;
   letter-spacing: 1px;
@@ -428,10 +428,11 @@ h1, h2, h3, h4, h5, h6 {
   border: 2px solid white;
   text-transform: uppercase;
   color: #fff;
+      margin-bottom: 50px;
 }
 
 #credits .developer {
-	font-family: "Simonetta";
+	font-family: "Lato";
   font-weight: 600;
   font-size: 13px;
   letter-spacing: 1px;
@@ -493,7 +494,7 @@ section {
   font-weight: 600;
   margin-bottom: 20px;
   padding-bottom: 0;
-  font-family: "Simonetta";
+  font-family: "Lato";
   color: #646c55;
 }
 
@@ -576,7 +577,7 @@ section {
 .about .count-box p {
   padding: 5px 0 0 0;
   margin: 0 0 0 60px;
-  font-family: "Simonetta";
+  font-family: "Lato";
   font-weight: 600;
   font-size: 14px;
   color: #646c55;
@@ -588,7 +589,7 @@ section {
   margin-top: 20px;
   color: #646c55;
   font-size: 15px;
-  font-family: "Simonetta";
+  font-family: "Lato";
   transition: ease-in-out 0.3s;
 }
 
@@ -781,7 +782,7 @@ section {
   color: #fff;
 }
 
-.cta .cta-btn {font-family: "Simonetta";
+.cta .cta-btn {font-family: "Lato";
   font-weight: 500;
   font-size: 15px;
   letter-spacing: 1px;
@@ -893,7 +894,7 @@ section {
 .skills .content h3 {
   font-weight: 700;
   font-size: 26px;
-  color: #3c4133;font-family: "Simonetta";
+  color: #3c4133;font-family: "Lato";
 }
 
 .skills .content ul {
@@ -926,7 +927,7 @@ section {
   margin: 0 0 6px 0;
   text-transform: uppercase;
   display: block;
-  font-weight: 600;font-family: "Simonetta";
+  font-weight: 600;font-family: "Lato";
   color: #3c4133;
 }
 
@@ -1193,7 +1194,7 @@ section {
 .pricing h4 {
   font-size: 36px;
   color: #3c0d64;
-  font-weight: 600;font-family: "Simonetta";
+  font-weight: 600;font-family: "Lato";
   margin-bottom: 20px;
 }
 
@@ -1248,7 +1249,7 @@ section {
   color: #fff;
   transition: none;
   font-size: 14px;
-  font-weight: 400;font-family: "Simonetta";
+  font-weight: 400;font-family: "Lato";
   font-weight: 600;
   box-shadow: 0 3px 7px rgba(148, 192, 69, 0.4);
   transition: 0.3s;
@@ -1303,7 +1304,7 @@ section {
   font-size: 16px;
   line-height: 26px;
   font-weight: 500;
-  margin: 0 0 10px 28px;font-family: "Simonetta";
+  margin: 0 0 10px 28px;font-family: "Lato";
 }
 
 .faq .faq-item p {
@@ -2166,7 +2167,7 @@ section {
 #footer .footer-top .footer-info p {
   font-size: 14px;
   line-height: 24px;
-  margin-bottom: 0;font-family: "Simonetta";
+  margin-bottom: 0;font-family: "Lato";
   color: #fff;
 }
 
@@ -2362,7 +2363,7 @@ section {
 .slider__contents {
   height: 100%;
   padding: 2rem;
-  text-align: center;
+  text-align: left !important;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2384,9 +2385,26 @@ section {
           justify-content: center;
 }
 .slider__image {
-	max-height:100px;
+	max-height:150px;
+	border-radius: 100%;
 }
+
+.slider__image__container{
+	text-align: center;
+	background: linear-gradient(270deg, rgba(255,109,130,1) 0%, rgba(176,59,171,1) 33%, rgba(120,37,137,1) 66%, rgba(60,13,100,1) 100%); 
+	border-radius: 100%; 
+	padding-top: 20px; 
+	padding-bottom: 20px;
+	width: 190px;
+	margin-left: 20%;
+}
+
+.slider_image_place{
+	max-width: 300px;
+}
+
 .slider__caption {
+  text-align: left;
   font-weight: 500;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   text-transform: uppercase;
@@ -2395,12 +2413,47 @@ section {
   color: #999;
   max-width: 90%;
   font-size: 14pt;
+  background-color: rgba(0,0,0,0.05);
+  color: black;
+  padding: 10px 10px;
+  border-radius: 10px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
 }
 .slider__auther{
-	font-weight: bold;
-	font-size: 12pt;
-  margin-bottom: 3rem;
+  text-align: left;
+  font-weight: bold;
+  font-size: 18pt;
 }
+.slider__auther_title{
+	text-align: left;
+	font-weight: bold;
+	font-size: 22pt;
+	color: rgba(60,13,100,1);
+}
+
+@media screen and (max-width: 1000px) {
+	.slider__image__container{
+		display: none;
+	}
+	.slider_image_place{
+		display: none;
+	}
+	.slider__auther
+	{
+		text-align: center;
+	}
+	.slider__auther_title
+	{
+		text-align: center;
+	}
+	.slider__txt
+	{
+		width: 100%;
+		max-width: 100%;
+		text-align: center;
+	}
+}
+
 
 @-webkit-keyframes check {
   50% {
