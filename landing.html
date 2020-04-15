@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Liza Lazebnik - Copyright and Translation services</title>
+  <meta name="description" content="Liza Lazebnik - Copyright and Translation services in English, Russian, Hebrew, and Spanish. ">
+  <meta content="English, Russian, Hebrew, Spanish, Translation, Copyright, Marketing and business content" name="keywords">
+
+  <!-- Favicons -->
+  <link href="img/favicon.ico" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="vendor/line-awesome/css/line-awesome.min.css" rel="stylesheet">
+  <link href="vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="vendor/aos/aos.css" rel="stylesheet">
+  
+
+  <!-- Template Main CSS File -->
+  <link href="css/style.css" rel="stylesheet">
+  
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-162765474-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-162765474-1');
+	</script>
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex">
+
+      <div class="logo mr-auto">
+         <h1 class="text-light"><a href="#hero">Liza Lazebnik</a></h1>
+        <!--<a href="index.html"><img src="img/logo.png" alt="" class="img-fluid"></a> -->
+      </div>
+
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li  class="get-started"><a href="#hero">Home</a></li>
+          <li class="get-started"><a href="#about">About</a></li>
+          <li class="get-started"><a href="#services">Services</a></li>
+          <li class="get-started"><a href="#blog">Portfolio</a></li>
+		  <li ><a href="index.html" class="padding-zero"><img src="img/en.jpg" alt="english version of the website" class="img-size"></a></li>
+		  <li ><a href="russian.html" class="padding-zero"><img src="img/ru.jpg" alt="russian version of the website" class="img-size russian-flag"></a></li>
+		  <li ><a href="spanish.html" class="padding-zero"><img src="img/sp.jpg" alt="spanish version of the website" class="img-size"></a></li>
+		  <li ><a href="hebrew.html" class="padding-zero"><img src="img/he.jpg" alt="hebrew version of the website" class="img-size israel-flag"></a></li>		  
+        </ul>
+      </nav><!-- .nav-menu -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Cta Section ======= -->
+    <section id="cta" class="cta cta-main">
+      <div class="container" data-aos="fade-in">
+        <div class="landing-form">
+			<form>
+				<div class="row">							
+					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+						<p class="landing-text" id="text1"> I need </p>
+					</div>					
+					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+						<select name="service" class="" id="service" />
+							<option value="">Pick Service</option>
+							<option value="translate">translate</option>
+							<option value="seo-article">SEO article</option>
+							<option value="subject-research">Subject Research</option>
+							<option value="resume-writing">resume writing</option>
+						</select> 
+					</div>
+				</div>
+				<div class="row">							
+					<div class="col-lg-1 col-md-1 col-sm-0 col-xs-0">
+						<p class="landing-text"> </p>
+					</div>							
+					<div class="col-lg-5 col-md-5 col-sm-6 col-xs-6">
+						<p class="landing-text" id="text2">written at</p>
+					</div>					
+					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+						<select name="lang" class="" id="lang" onchange="return changeLang();" />
+							<option value="">Pick Lanugage</option>
+							<option value="english">English</option>
+							<option value="russian">Russian</option>
+							<option value="spanish">Spanish</option>
+						</select> 
+					</div>
+				</div>
+				<div class="row">							
+					<div class="col-lg-2 col-md-2 col-sm-0 col-xs-0">
+						<p class="landing-text"> </p>
+					</div>							
+					<div class="col-lg-5 col-md-5 col-sm-6 col-xs-6">
+						<p class="landing-text" id="text3">word count</p>
+					</div>					
+					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+						<select name="words" class="" id="words" onchange="return changeWordsCount();"  />
+							<option value="">Pick Word Count</option>
+							<option value="400">400 words</option>
+							<option value="800">800 words</option>
+							<option value="1200">1200 words</option>
+							<option value="1600">1600 words</option>
+							<option value="2000">2000 words</option>
+							<option value="3000">3000 words</option>
+							<option value="4000">4000 words</option>
+							<option value="5000">More then 4000 words</option>
+						</select> 
+					</div>
+				</div>
+				<div class="row">							
+					<div class="col-lg-3 col-md-3 col-sm-0 col-xs-0">
+						<p class="landing-text"> </p>
+					</div>							
+					<div class="col-lg-5 col-md-5 col-sm-6 col-xs-6">
+						<p class="landing-text" id="text4">delivered in</p>
+					</div>					
+					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+						<select name="days" class="" id="days" />
+							<option value="">Pick Days</option>
+							<option value="1">1 day</option>
+							<option value="2">2 days</option>
+							<option value="3">3 days</option>
+							<option value="4">4 days</option>
+							<option value="5">5 days</option>
+							<option value="6">6 days</option>
+							<option value="7">7 days / 1 Week</option>
+							<option value="8">More then on week</option>
+						</select> 
+					</div>
+				</div>
+				<div class="row">							
+					<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+						<p class="landing-text"> </p>
+					</div>							
+					<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+						<button type="submit" class="btn btn-block btn-lg" id="price_btn" onclick="return checkPrice();"> Checkout Price </button>
+						<h3 id="error_massage" style="display: none;" onclick="return closeErrorMassage();"> Checkout Price </h3>
+					</div>
+				</div>
+			</form>
+        </div>
+      </div>
+    </section><!-- End Cta Section -->
+	
+    <section id="price_answer" class="cta cta-main" style="display: none">
+      <div class="container" data-aos="fade-in">
+        <div class="price-container">
+			<div class="row">
+				<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+				</div>
+				<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+					<h2> Price Estmimation </h2>
+					<p id="price_est_text">  </p>
+					<div class="row">
+						<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+							<input type="text" class="form-control btn-block" style="margin-top: 10px;" id="registerEmail" placeholder="Enter Your email Here">
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+							<button type="submit" class="btn btn-dark btn-block" style="margin-top: 10px;">Get Personalized Offer</button>
+						</div>
+					</div>
+				</div>
+			</div>
+        </div>
+      </div>
+    </section><!-- End Cta Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" style="background: rgb(0,0,0);">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Elizaveta Lazebnik</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits" id="credits">
+        Сode and design <a class="href="https://teddy4445.github.io/teddy_lazebnik_academic_website/" >DnC-algo</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="vendor/php-email-form/validate.js"></script>
+  <script src="vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="vendor/counterup/counterup.min.js"></script>
+  <script src="vendor/venobox/venobox.min.js"></script>
+  <script src="vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="vendor/aos/aos.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="js/landing.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>
