@@ -1,31 +1,23 @@
-function changeLang()
+function changeService()
 {
-	var lang_select_element = document.getElementById("lang");
-    var lang_select = lang_select_element.options[lang_select_element.selectedIndex].value;
+	var service_select_element = document.getElementById("service");
+    var service_select = service_select_element.options[service_select_element.selectedIndex].value;
 	
-	if (lang_select == "english")
+	document.getElementById("translate-panel").style.display = "none";
+	document.getElementById("article-panel").style.display = "none";
+	document.getElementById("resume-panel").style.display = "none";
+	
+	if (service_select == "translate")
 	{
-		document.getElementById("text1").innerHTML = "I need";
-		document.getElementById("text2").innerHTML = "written at";
-		document.getElementById("text3").innerHTML = "word count";
-		document.getElementById("text4").innerHTML = "delivered in";
-		document.getElementById("price_btn").innerHTML = "Checkout Price";
+		document.getElementById("translate-panel").style.display = "";
 	}
-	else if (lang_select == "russian")
+	else if (service_select == "seo-article" || service_select == "pro-article" || service_select == "subject-research")
 	{
-		document.getElementById("text1").innerHTML = "Mне нужно";
-		document.getElementById("text2").innerHTML = "написано в";
-		document.getElementById("text3").innerHTML = "количество слов";
-		document.getElementById("text4").innerHTML = "доставлено в";
-		document.getElementById("price_btn").innerHTML = "Оформить заказ Цена";
+		document.getElementById("article-panel").style.display = "";
 	}
-	else if (lang_select == "spanish")
+	else if (service_select == "resume-writing")
 	{
-		document.getElementById("text1").innerHTML = "Necesito";
-		document.getElementById("text2").innerHTML = "escrito en";
-		document.getElementById("text3").innerHTML = "el recuento de palabras";
-		document.getElementById("text4").innerHTML = "entregado en";
-		document.getElementById("price_btn").innerHTML = "Precio de pago";
+		document.getElementById("resume-panel").style.display = "";
 	}
 }
 
@@ -96,6 +88,10 @@ function checkPrice()
 	else if (service_select == "resume-writing")
 	{
 		serviceFactor = 0.95;
+	}
+	else if (service_select == "pro-writing")
+	{
+		serviceFactor = 1.1;
 	}
 	else if (service_select == "")
 	{

@@ -78,12 +78,13 @@
 						<p class="landing-text" id="text1"> I need </p>
 					</div>					
 					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
-						<select name="service" class="" id="service" />
+						<select name="service" class="" id="service" onchange="return changeService();" />
 							<option value="">Pick Service</option>
-							<option value="translate">translate</option>
+							<option value="translate">Translate</option>
 							<option value="seo-article">SEO article</option>
+							<option value="pro-article">Profesional article</option>
 							<option value="subject-research">Subject Research</option>
-							<option value="resume-writing">resume writing</option>
+							<option value="resume-writing">Resume writing</option>
 						</select> 
 					</div>
 				</div>
@@ -95,7 +96,7 @@
 						<p class="landing-text" id="text2">written at</p>
 					</div>					
 					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
-						<select name="lang" class="" id="lang" onchange="return changeLang();" />
+						<select name="lang" class="" id="lang" />
 							<option value="">Pick Lanugage</option>
 							<option value="english">English</option>
 							<option value="russian">Russian</option>
@@ -103,6 +104,57 @@
 						</select> 
 					</div>
 				</div>
+				
+				<div class="row" id="translate-panel" style="display: none;">
+					<div class="col-lg-1 col-md-1 col-sm-0 col-xs-0">
+						<p class="landing-text"> </p>
+					</div>							
+					<div class="col-lg-5 col-md-5 col-sm-6 col-xs-6">
+						<p class="landing-text" id="text2">translate to</p>
+					</div>					
+					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+						<select name="lang" class="" id="translate_lang" />
+							<option value="">Pick Lanugage</option>
+							<option value="english">English</option>
+							<option value="russian">Russian</option>
+							<option value="spanish">Spanish</option>
+						</select> 
+					</div>
+				</div>
+				
+				<div class="row" id="article-panel" style="display: none;">
+					<div class="col-lg-1 col-md-1 col-sm-0 col-xs-0">
+						<p class="landing-text"> </p>
+					</div>							
+					<div class="col-lg-5 col-md-5 col-sm-6 col-xs-6">
+						<p class="landing-text" id="text2">subject is</p>
+					</div>					
+					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+						<select name="lang" class="" id="translate_lang" />
+							<option value="">Pick the best descring subject</option>
+							<option value="a">a</option>
+							<option value="b">b</option>
+							<option value="c">c</option>
+						</select> 
+					</div>
+				</div>
+				
+				<div class="row" id="resume-panel" style="display: none;">
+					<div class="col-lg-1 col-md-1 col-sm-0 col-xs-0">
+						<p class="landing-text"> </p>
+					</div>							
+					<div class="col-lg-5 col-md-5 col-sm-6 col-xs-6">
+						<p class="landing-text" id="text2">include LinkedIn</p>
+					</div>					
+					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+						<select name="lang" class="" id="translate_lang" />
+							<option value="">Pick option</option>
+							<option value="yes">Yes</option>
+							<option value="no">No</option>
+						</select> 
+					</div>
+				</div>
+				
 				<div class="row">							
 					<div class="col-lg-2 col-md-2 col-sm-0 col-xs-0">
 						<p class="landing-text"> </p>
