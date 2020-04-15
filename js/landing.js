@@ -3,21 +3,21 @@ function changeService()
 	var service_select_element = document.getElementById("service");
     var service_select = service_select_element.options[service_select_element.selectedIndex].value;
 	
-	document.getElementById("translate-panel").style.display = "none";
-	document.getElementById("article-panel").style.display = "none";
-	document.getElementById("resume-panel").style.display = "none";
+	$("#translate-panel").fadeOut('fast');
+	$("#article-panel").fadeOut('fast');
+	$("#resume-panel").fadeOut('fast');
 	
 	if (service_select == "translate")
 	{
-		document.getElementById("translate-panel").style.display = "";
+		$("#translate-panel").fadeIn('slow');
 	}
 	else if (service_select == "seo-article" || service_select == "pro-article" || service_select == "subject-research")
 	{
-		document.getElementById("article-panel").style.display = "";
+		$("#article-panel").fadeIn('slow');
 	}
 	else if (service_select == "resume-writing")
 	{
-		document.getElementById("resume-panel").style.display = "";
+		$("#resume-panel").fadeIn('slow');
 	}
 }
 
@@ -126,6 +126,56 @@ function checkPrice()
 		return false;
 	}
 	
+	var spesificFactor = 1;
+	if (service_select == "translate")
+	{
+		var translate_lang_element = document.getElementById("translate_lang");
+		var translate_lang_value = translate_lang_element.options[translate_lang_element.selectedIndex].value;
+		if (translate_lang_value == lang_select)
+		{
+			langFactor = 0;
+		}
+		else if (translate_lang_value == "")
+		{
+			var errorMsg = document.getElementById("error_massage");
+			errorMsg.style.display = "";
+			errorMsg.innerHTML = "Please Pick a translation language";
+			return false;
+		}
+	}
+	else if (service_select == "seo-article" || service_select == "pro-article" || service_select == "subject-research")
+	{
+		var subject_element = document.getElementById("subject-write");
+		var subject_value = subject_element.options[subject_element.selectedIndex].value;
+		if (subject_value == "tech" || subject_value == "business" || subject_value == "legal")
+		{
+			spesificFactor = 1.1;
+		}
+		else if (subject_value == "")
+		{
+			var errorMsg = document.getElementById("error_massage");
+			errorMsg.style.display = "";
+			errorMsg.innerHTML = "Please Pick a Subject";
+			return false;
+		}
+	}
+	else if (service_select == "resume-writing")
+	{
+		var subject_element = document.getElementById("subject-write");
+		var subject_value = subject_element.options[subject_element.selectedIndex].value;
+		if (subject_value == "yes")
+		{
+			spesificFactor = 1.25;
+		}
+		else if (subject_value == "")
+		{
+			var errorMsg = document.getElementById("error_massage");
+			errorMsg.style.display = "";
+			errorMsg.innerHTML = "Please Pick if LinkedIn is needed";
+			return false;
+		}
+	}
+	
 	// get the main cost from the number of words
 	var words_select_element = document.getElementById("words");
     var words_value = words_select_element.options[words_select_element.selectedIndex].value;
@@ -138,7 +188,7 @@ function checkPrice()
 	}
 	var wordPrice = 15 * (parseInt(words_value) / 800);
 	
-	var finalPrice = Math.round(serviceFactor * langFactor * wordPrice);
+	var finalPrice = Math.round(serviceFactor * langFactor * wordPrice * spesificFactor);
 	document.getElementById("price_est_text").innerHTML = "The project cost is around <b>" + finalPrice + "$</b>";
 	document.getElementById("price_est_text").style.fontSize = "32px";
 	
@@ -153,6 +203,6 @@ function checkPrice()
 }
 
 function closeErrorMassage()
-{
-	document.getElementById("error_massage").style.display = "none";
+{ 
+	$("#error_massage").fadeOut();
 }
