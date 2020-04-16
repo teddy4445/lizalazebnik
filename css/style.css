@@ -12,6 +12,10 @@ a:hover {
     text-decoration: none
 }
 
+p{
+	font-size: 14pt;
+}
+
 h1,
 h2,
 h3,
@@ -988,7 +992,7 @@ section {
     margin-left: 40px;
     font-weight: 700;
     margin-bottom: 15px;
-    font-size: 18px
+    font-size: 18pt;
 }
 
 .services .title a {
@@ -1000,7 +1004,7 @@ section {
 }
 
 .services .description {
-    font-size: 14px;
+    font-size: 14pt;
     margin-left: 40px;
     line-height: 24px;
     margin-bottom: 0

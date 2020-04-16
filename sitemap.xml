@@ -11,15 +11,23 @@
  <changefreq>monthly</changefreq>
 </url>
 <url>
- <loc>http://http://teddy4445.github.io/lizalazebnik/index_ru.html</loc>
+ <loc>http://http://teddy4445.github.io/lizalazebnik/russian.html</loc>
  <changefreq>monthly</changefreq>
 </url>
 <url>
- <loc>http://http://teddy4445.github.io/lizalazebnik/index_sp.html</loc>
+ <loc>http://http://teddy4445.github.io/lizalazebnik/spanish.html</loc>
  <changefreq>monthly</changefreq>
 </url>
 <url>
- <loc>http://http://teddy4445.github.io/lizalazebnik/index_he.html</loc>
+ <loc>http://http://teddy4445.github.io/lizalazebnik/hebrew.html</loc>
+ <changefreq>monthly</changefreq>
+</url>
+<url>
+ <loc>http://http://teddy4445.github.io/lizalazebnik/landing.html</loc>
+ <changefreq>monthly</changefreq>
+</url>
+<url>
+ <loc>http://http://teddy4445.github.io/lizalazebnik/post.html</loc>
  <changefreq>monthly</changefreq>
 </url>
 </urlset>
