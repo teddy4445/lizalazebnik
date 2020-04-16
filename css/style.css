@@ -391,6 +391,18 @@ h6 {
     z-index: 1
 }
 
+#post-hero {
+    width: 100%;
+    height: 85vh;
+    background-size: cover;
+    position: relative;
+    margin-bottom: -140px;
+    z-index: 1;
+    background: #3c0d64;
+    background: linear-gradient(0deg, #ff6d82 0, #b03bab 33%, #782589 66%, #3c0d64 100%);
+	height: 400px;
+}
+
 #hero:before {
     content: "";
     background: rgba(60, 65, 51, .4);
@@ -414,7 +426,28 @@ h6 {
     text-align: center
 }
 
+#post-hero .post-hero-container {
+    position: absolute;
+    bottom: 100px;
+    top: 30%;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center
+}
+
 #hero h2 {
+    margin: 0 0 10px 0;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 56px;
+    color: #fff
+}
+
+#post-hero h2 {
     margin: 0 0 10px 0;
     font-size: 56px;
     font-weight: 700;
@@ -596,6 +629,19 @@ section {
     box-shadow: 0 2px 15px rgba(0, 0, 0, .1);
     padding-bottom: 15px;
     background: #fff
+}
+
+.about .post-about{
+	padding: 30px 40px;
+}
+
+.about .post-about h3{
+	font-size: 22pt;
+}
+
+.about .post-about p{
+	font-size: 16pt;
+	line-height: 1.25;
 }
 
 .about .count-box {
@@ -1708,6 +1754,10 @@ section {
     box-shadow: 0 4px 16px rgba(0, 0, 0, .1)
 }
 
+.blog .entry a{
+	text-align: center;
+}
+
 .blog .entry .entry-img {
     max-height: 400px;
     margin: -20px -20px 20px -20px;
@@ -2609,4 +2659,22 @@ section {
 	font-weight: bold;
 	font-size: 44px;
 	color: rgb(250,250,250);
+}
+
+.post-btn{
+    background: #3c0d64;
+	display: inline-block;
+    background: linear-gradient(270deg, #ff6d82 0, #b03bab 33%, #782589 66%, #3c0d64 100%);
+	border: 1px solid rgb(250, 250, 250);
+	padding: 6px 16px;
+	border-radius: 1.25rem;
+	text-align: center;
+	margin: 20px 4px;
+	color: rgb(250, 250, 250);
+}
+
+.post-btn:hover{
+    background: rgb(250, 250, 250);
+	border: 1px solid #3c0d64;
+	color: #3c0d64
 }
