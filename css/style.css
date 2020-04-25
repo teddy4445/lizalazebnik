@@ -16,6 +16,11 @@ p{
 	font-size: 14pt;
 }
 
+td{
+	font-size: 16pt;
+    line-height: 1.25;
+}
+
 h1,
 h2,
 h3,
@@ -2587,6 +2592,10 @@ section {
     color: #3c0d64
 }
 
+#balerin{
+	display: inherit;
+}
+
 @media screen and (max-width:1000px) {
     .slider {
         width: 100%;
@@ -2610,6 +2619,9 @@ section {
         max-width: 100%;
         text-align: center
     }
+	#balerin{
+		display: none;
+	}
 }
 
 @-webkit-keyframes check {
