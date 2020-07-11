@@ -87,7 +87,7 @@ function checkPrice()
 	}
 	else if (service_select == "resume-writing")
 	{
-		serviceFactor = 0.95;
+		serviceFactor = 1.15;
 	}
 	else if (service_select == "pro-writing")
 	{
@@ -186,7 +186,7 @@ function checkPrice()
 		errorMsg.innerHTML = "Please Pick Word Count";
 		return false;
 	}
-	var wordPrice = 15 * (parseInt(words_value) / 800);
+	var wordPrice = 30 * (parseInt(words_value) / 800);
 	
 	var finalPrice = Math.round(serviceFactor * langFactor * wordPrice * spesificFactor);
 	document.getElementById("price_est_text").innerHTML = "The project cost is around <b>" + finalPrice + "$</b>";
